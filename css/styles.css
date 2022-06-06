@@ -211,10 +211,12 @@ ul {
 .social-network-items {
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .social-network-items li+li {
     margin-left: 10px;
+
 }
 
 
@@ -265,10 +267,14 @@ ul {
 
 
 .feature-list-clients {
-    width: calc((100%-150px) / 6);
+    width: calc((100% - 150px) / 6);
     height: 92px;
 
     cursor: pointer;
+}
+
+.feature-list-clients+.feature-list-clients {
+    margin-left: 30px;
 }
 
 .link-clients {
@@ -940,7 +946,7 @@ address {
     color: #FFFFFF;
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+
 }
 
 .button-filters-design:hover,
@@ -1051,13 +1057,17 @@ address {
 
 }
 
-.portfolio-item .portfolio-poster {
+.portfolio-poster {
+    display: block;
+}
+
+.link-portfolio-item {
     display: block;
 }
 
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.link-portfolio-item:hover,
+.link-portfolio-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
